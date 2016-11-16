@@ -1,8 +1,8 @@
 #!/bin/csh
-#SBATCH -p test.q
+#SBATCH -p par6.q
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1
-#SBATCH -t 00:10:00
+#SBATCH -t 00:45:00
 #SBATCH --exclusive
 
 module load intel/xe_2015.2
