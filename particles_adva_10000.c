@@ -19,7 +19,7 @@
 
 
 
-const int NumberOfParticles = 2;
+const int NumberOfParticles = 10000;
 // a variable to store the number of particles in the simulation
 
 const double a = pow(10,-5);
@@ -104,7 +104,7 @@ double getTimeStepSize(double distance){
 
 void printCSVFile(int counter) {
   std::stringstream filename;
-  filename << "new_csv/result-" << counter <<  ".csv";
+  filename << "csv_3/" << NumberOfParticles << "/result-" << counter <<  ".csv";
   std::ofstream out( filename.str().c_str() );
 
   out << "x, y, z" << std::endl;
@@ -242,6 +242,8 @@ void updateBody(int NumberOfParticles, int current_timestep) {
 
 int main() {
 
+  clock_t begin = clock();
+
   setUp(NumberOfParticles);
   printCSVFile(0);
   
@@ -249,7 +251,7 @@ int main() {
   const int plotEveryKthStep = 100;
   for (int i=0; i<timeSteps; i++) {
 
-    printf("%d\r", (i * 100/timeSteps));
+    //printf("%d\r", (i * 100/timeSteps));
     // percentage of how far through we are
 
     updateBody(NumberOfParticles, i);
@@ -257,6 +259,15 @@ int main() {
       printCSVFile(i/plotEveryKthStep+1); // Please switch off all IO if you do performance tests.
     }
   }
+
+  clock_t end = clock();
+  double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+
+  std::stringstream filename;
+  filename << "csv_3/" << NumberOfParticles << "/result.txt";
+  std::ofstream out( filename.str().c_str() );
+
+  out << elapsed_secs << std::endl;
 
   return 0;
 }

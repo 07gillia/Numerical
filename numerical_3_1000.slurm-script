@@ -1,0 +1,12 @@
+#!/bin/csh
+#SBATCH -p test.q
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH -t 00:10:00
+#SBATCH --exclusive
+
+module load intel/xe_2015.2
+
+module purge
+icpc -O3 particle_adva_1000.c -o particle_adva_1000
+./particle_adva_1000
