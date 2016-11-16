@@ -5,8 +5,7 @@
 #SBATCH -t 00:30:00
 #SBATCH --exclusive
 
-module load intel/xe_2015.2
-
 module purge
+module load intel/xe_2015.2
 icpc -O3 particle_10000.c -o particle_10000
 ./particle_10000
