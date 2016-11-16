@@ -7,5 +7,4 @@
 
 module purge
 module load intel/xe_2015.2
-icpc -O3 particles_10000.c -o particle_10000
 ./particle_10000

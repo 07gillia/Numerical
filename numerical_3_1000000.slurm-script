@@ -7,5 +7,4 @@
 
 module purge
 module load intel/xe_2015.2
-icpc -O3 particles_adva_1000000.c -o particle_adva_1000000
 ./particle_adva_1000000
