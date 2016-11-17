@@ -1,3 +1,6 @@
+module purge
+module load slurm
+
 sbatch numerical_1_10.slurm-script
 
 sbatch numerical_1_100.slurm-script
