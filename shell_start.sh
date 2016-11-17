@@ -1,3 +1,4 @@
+module load slurm
 purge module
 module load intel/xe_2015.2
 
