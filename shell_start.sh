@@ -1,5 +1,3 @@
-module load slurm
-
 g++ -O3 particles_10.c -o particle_10
 
 g++ -O3 particles_100.c -o particle_100
