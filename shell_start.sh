@@ -1,4 +1,4 @@
-purge module
+module purge
 module load slurm
 module load intel/xe_2015.2
 
@@ -20,8 +20,8 @@ icpc -O3 particles_adva_100.c -o particle_adva_100
 
 icpc -O3 particles_adva_1000.c -o particle_adva_1000
 
-icpc -O3 particles_adva_10000.c -o particle_adva_10000
+icpc -O3 -mcmodel=large particles_adva_10000.c -o particle_adva_10000
 
-icpc -O3 particles_adva_100000.c -o particle_adva_100000
+icpc -O3 -mcmodel=large particles_adva_100000.c -o particle_adva_100000
 
-icpc -O3 particles_adva_1000000.c -o particle_adva_1000000
+icpc -O3 -mcmodel=large particles_adva_1000000.c -o particle_adva_1000000

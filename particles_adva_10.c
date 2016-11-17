@@ -143,7 +143,7 @@ void updateBody(int NumberOfParticles, int current_timestep) {
             // iterate through every mirror of the current particle
             double normalX = x[i][0]-(x[j][0] + extra_dimentions[k][0]);
             double normalY = x[i][1]-(x[j][1] + extra_dimentions[k][1]);
-            double normalZ = x[i][2]-(x[j][2] + extra_dimentions[k][0]);
+            double normalZ = x[i][2]-(x[j][2] + extra_dimentions[k][2]);
             // calculate the distance between the current particle and the mirror particle in the box 'k'
 
             double distance = sqrt((normalX) * (normalX) + (normalY) * (normalY) + (normalZ) * (normalZ));
@@ -175,7 +175,7 @@ void updateBody(int NumberOfParticles, int current_timestep) {
             
             double normalX = x[i][0]-(x[j][0] + extra_dimentions[k][0]);
             double normalY = x[i][1]-(x[j][1] + extra_dimentions[k][1]);
-            double normalZ = x[i][2]-(x[j][2] + extra_dimentions[k][0]);
+            double normalZ = x[i][2]-(x[j][2] + extra_dimentions[k][2]);
             // calculate the distance between the current particle and the mirror particle in the box 'k'
           
             double distance = sqrt((normalX) * (normalX) + (normalY) * (normalY) + (normalZ) * (normalZ));

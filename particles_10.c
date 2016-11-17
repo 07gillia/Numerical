@@ -60,7 +60,7 @@ void setUp(int NumberOfParticles) {
   }
   
   /*
-  x[0][0] = 0.4;
+  x[0][0] = 0.1;
   x[0][1] = 0.5;
   x[0][2] = 0.5;
 
@@ -69,7 +69,7 @@ void setUp(int NumberOfParticles) {
   v[0][2] = 0.0;
 
   
-  x[1][0] = 0.6;
+  x[1][0] = 0.9;
   x[1][1] = 0.5;
   x[1][2] = 0.5;
 
@@ -134,7 +134,7 @@ void updateBody(int NumberOfParticles) {
 
           double normalX = x[i][0]-(x[j][0] + extra_dimentions[k][0]);
           double normalY = x[i][1]-(x[j][1] + extra_dimentions[k][1]);
-          double normalZ = x[i][2]-(x[j][2] + extra_dimentions[k][0]);
+          double normalZ = x[i][2]-(x[j][2] + extra_dimentions[k][2]);
           // calculate the distance between the current particle and the mirror particle in the box 'k'
 
           double distance = sqrt((normalX) * (normalX) + (normalY) * (normalY) + (normalZ) * (normalZ));
@@ -206,7 +206,7 @@ int main() {
   setUp(NumberOfParticles);
   printCSVFile(0);
   
-  const int timeSteps        = 200000;
+  const int timeSteps        = 2000000;
   const int plotEveryKthStep = 100;
   for (int i=0; i<timeSteps; i++) {
 

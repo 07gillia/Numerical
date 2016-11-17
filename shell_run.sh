@@ -5,8 +5,6 @@ sbatch numerical_1_10.slurm-script
 
 sbatch numerical_1_100.slurm-script
 
-sbatch numerical_1_100.slurm-script
-
 sbatch numerical_1_1000.slurm-script
 
 sbatch numerical_1_10000.slurm-script
