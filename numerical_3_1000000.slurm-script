@@ -6,5 +6,4 @@
 #SBATCH --exclusive
 
 module purge
-module load intel/xe_2015.2
 ./particle_adva_1000000

@@ -247,7 +247,7 @@ int main() {
   setUp(NumberOfParticles);
   printCSVFile(0);
   
-  const int timeSteps        = 2000000;
+  const int timeSteps        = 200000;
   const int plotEveryKthStep = 100;
   for (int i=0; i<timeSteps; i++) {
 
