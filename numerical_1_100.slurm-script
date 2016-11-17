@@ -6,4 +6,4 @@
 #SBATCH --exclusive
 
 module purge
-./particle_1000
+./particle_100
