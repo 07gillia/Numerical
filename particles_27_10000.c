@@ -1,3 +1,4 @@
+
 // Compile with
 //
 // g++ -O3 particles.c -o particles
@@ -233,6 +234,9 @@ int main() {
   std::ofstream out( filename.str().c_str() );
 
   out << elapsed_secs << std::endl;
+
+  printf("%d\n", NumberOfParticles);
+  printf("%f\n", elapsed_secs);
 
   return 0;
 }

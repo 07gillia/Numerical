@@ -256,5 +256,8 @@ int main() {
 
   out << elapsed_secs << std::endl;
 
+  printf("%d\n", NumberOfParticles);
+  printf("%f\n", elapsed_secs);
+
   return 0;
 }
