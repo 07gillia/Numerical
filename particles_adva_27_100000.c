@@ -243,7 +243,7 @@ int main() {
 
     updateBody(NumberOfParticles, i);
     if (i%plotEveryKthStep==0) {
-      printCSVFile(i/plotEveryKthStep+1); // Please switch off all IO if you do performance tests.
+      //printCSVFile(i/plotEveryKthStep+1); // Please switch off all IO if you do performance tests.
     }
   }
 

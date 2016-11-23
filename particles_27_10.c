@@ -209,7 +209,7 @@ int main() {
 
   clock_t begin = clock();
 
-  setUp(NumberOfParticles);
+  //setUp(NumberOfParticles);
   //printCSVFile(0);
   
   const int timeSteps        = 2000000;
