@@ -48,7 +48,7 @@ const double extra_dimentions[7][3]  = {{0,0,0},{0,0,1},{0,0,-1},{0,1,0},{0,-1,0
 void setUp(int NumberOfParticles) {
   srand (time(NULL));
   // set the seed of the random number generator
-  /*
+  
   for (int i = 0; i<NumberOfParticles; i++){
     x[i][0] = (double)rand()/(double)RAND_MAX;
     x[i][1] = (double)rand()/(double)RAND_MAX;
@@ -58,8 +58,8 @@ void setUp(int NumberOfParticles) {
     v[i][1] = 0.0;
     v[i][2] = 0.0;
   }
-  */
   
+  /*
   x[0][0] = 0.1;
   x[0][1] = 0.5;
   x[0][2] = 0.5;
@@ -76,7 +76,7 @@ void setUp(int NumberOfParticles) {
   v[1][0] = 0.0;
   v[1][1] = 0.0;
   v[1][2] = 0.0;
-  
+  */
 }
 
 

@@ -20,7 +20,7 @@
 
 
 
-const int NumberOfParticles = 2;
+const int NumberOfParticles = 10;
 // a variable to store the number of particles in the simulation
 
 const double a = pow(10,-5);
