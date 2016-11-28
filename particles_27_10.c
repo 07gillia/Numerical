@@ -237,5 +237,7 @@ int main() {
   printf("%d\n", NumberOfParticles);
   printf("%f\n", elapsed_secs);
 
+  std::cout << "time taken: " << elapsed_secs << " number of particles " << NumberOfParticles << std::endl;
+
   return 0;
 }
