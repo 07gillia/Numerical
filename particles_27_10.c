@@ -16,6 +16,7 @@
 #include <sstream>
 #include <math.h>
 #include <stdlib.h>
+#include <iostream>
 
 
 const int NumberOfParticles = 10;
