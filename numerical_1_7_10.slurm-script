@@ -1,5 +1,5 @@
 #!/bin/csh
-#SBATCH -p par6.q
+#SBATCH -p test.q
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1
 #SBATCH -t 24:00:00
